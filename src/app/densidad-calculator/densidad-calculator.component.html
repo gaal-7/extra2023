@@ -1,0 +1,16 @@
+<div>
+    <label for="masa">Masa:</label>
+    <input type="number" id="masa" [(ngModel)]="masa" />
+  </div>
+  
+  <div>
+    <label for="volumen">Volumen:</label>
+    <input type="number" id="volumen" [(ngModel)]="volumen" />
+  </div>
+  
+  <button (click)="calcularDensidad()">Calcular Densidad</button>
+  
+  <div *ngIf="densidad !== null">
+    <p>La densidad es: {{ densidad }}</p>
+  </div>
+  
